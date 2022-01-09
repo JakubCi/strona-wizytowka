@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="utf-8">
+        <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+        <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="contents.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="rightmenu.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>   
+        <title>Strona internetowa</title>
+    </head>
+    <body>
+        <div class="main-container" id="scrollable">
+            <div class="menu">
+                <nav class="top-nav">
+                    <a class="cmp-name"href="#" target="_self"><p id="company-name">Twoja nazwa firmy</p></a>
+                    <div class="centered">
+                        <ul id="top-nav-items">
+                            <li><a id="omnie">O mnie</a></li>
+                            <li><a id="kontakt">Kontakt</a></li>
+                            <li><a id="opinie">Opinie</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div id="bars" class="container" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </nav>
+                <div class="right-menu">
+                    <a>O mnie</a>
+                    <a>Kontakt</a>
+                    <a>Opinie</a>
+                    <a>Kwalifikacje</a>
+                </div>
+            </div>
+                
+                <div class="bg-main-image img6"></div>
+                <div id="stop-line"></div>
+                <div class="navigation">
+                    <img src="zdjecie3.jpg" id="zdjecie1">
+                    
+                    <div tabindex="0"class="omn1"name="omn"id="informacje1"><h1 id="hh1">O mnie</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+                </div>
+                <div id="stop-line"></div>
+                <div tabindex="0"class="kon1"name="kon"id="informacje1"><h1 id="hh1">Kontakt</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+        </div>     
+        <script>
+            function myFunction(x) {
+              x.classList.toggle("change");
+            }
+
+            window.onbeforeunload = function () {
+              window.scrollTo(0, 0);
+            }
+        </script>
+        <script src="focusing.js"></script>
+        <script src="scrolling.js"></script>
+        <script src="rightmenuopen.js"></script>
+        <script src="picture_showing.js"></script>
+    </body>
+    
+</html>
